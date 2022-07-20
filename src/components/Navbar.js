@@ -10,11 +10,11 @@ const linkStyles = {
   color: "white",
 };
 
-function Navbar({ setIsLoggedIn }) {
+function Navbar({ onLogIn }) {
   const history = useHistory();
 
   function handleLogout() {
-    setIsLoggedIn(false);
+    onLogIn(false);
     history.push("/login");
   }
 
